@@ -1,14 +1,33 @@
 import React, { useState } from 'react';
 
-const Lists = (props) => {
-  const full_List = props.singleList;
+const Lists = ({ singleList, setList }) => {
+
+  const deletItem = (key) => {
+    const updatedList = singleList.filter((items) => {
+      return items.key !== key;
+    });
+    setList(updatedList);
+  };
+
   return (
     <div>
-      {full_List.map((items) => {
-        return <p key={items.key}>{items.currentValue}</p>;
+      {singleList.map((items) => {
+        return (
+          <>
+            <div key={items.key} className="list__Wrapper">
+              <p>{items.currentValue}</p>
+              <button
+                className="Add__ItemBtn"
+                onClick={() => deletItem(items.key)}
+              >
+                X
+              </button>
+            </div>
+          </>
+        );
       })}
     </div>
   );
-};  
+};
 
 export default Lists;

@@ -11,3 +11,9 @@ h1 {
   border: 1px solid #898989;
   margin-left: 10px;
 }
+.list__Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+}
