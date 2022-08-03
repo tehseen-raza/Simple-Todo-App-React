@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Add__ItemBtn {
+  border-radius: 5px;
+  border: 1px solid #898989;
+  margin-left: 10px;
+}
