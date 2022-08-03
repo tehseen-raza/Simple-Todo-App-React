@@ -25,7 +25,7 @@ export default function App() {
             +
           </button>
         </div>
-        <Lists singleList={list} setList={setList}/>
+        <Lists singleList={list} setList={setList} />
       </div>
     </div>
   );
