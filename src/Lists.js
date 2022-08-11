@@ -16,7 +16,7 @@ const Lists = ({ singleList, setList }) => {
             <div key={items.key} className="list__Wrapper">
               <p>{items.currentValue}</p>
               <button
-                className="Add__ItemBtn"
+                className="Del__ItemBtn"
                 onClick={() => deletItem(items.key)}
               >
                 X
