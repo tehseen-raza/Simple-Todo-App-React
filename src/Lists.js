@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Lists = ({ singleList, setList }) => {
-
   const deletItem = (key) => {
     const updatedList = singleList.filter((items) => {
       return items.key !== key;
