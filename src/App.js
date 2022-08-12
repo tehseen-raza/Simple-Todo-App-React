@@ -11,7 +11,7 @@ export default function App() {
   };
 
   const addItem = () => {
-    val == ''
+    val.length === 0
       ? alert('Enter Something . . .')
       : setList([...list, { currentValue: val, key: Math.random() * 10 }]);
     setVal('');

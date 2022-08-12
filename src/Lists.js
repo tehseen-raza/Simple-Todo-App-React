@@ -7,6 +7,7 @@ const Lists = ({ singleList, setList }) => {
     });
     setList(updatedList);
   };
+  const editItem = () => {};
 
   return (
     <div>
@@ -15,12 +16,20 @@ const Lists = ({ singleList, setList }) => {
           <>
             <div key={items.key} className="list__Wrapper">
               <p>{items.currentValue}</p>
-              <button
-                className="Del__ItemBtn"
-                onClick={() => deletItem(items.key)}
-              >
-                X
-              </button>
+              <div>
+                <button
+                  className="Del__ItemBtn"
+                  onClick={() => deletItem(items.key)}
+                >
+                  X
+                </button>
+                <button
+                  className="Edit__ItemBtn"
+                  onClick={() => editItem(items.key)}
+                >
+                  Edit
+                </button>
+              </div>
             </div>
           </>
         );

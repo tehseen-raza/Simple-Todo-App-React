@@ -6,7 +6,9 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.Add__ItemBtn, .Del__ItemBtn {
+.Add__ItemBtn,
+.Del__ItemBtn,
+.Edit__ItemBtn {
   border-radius: 5px;
   border: 1px solid #898989;
   margin-left: 10px;
