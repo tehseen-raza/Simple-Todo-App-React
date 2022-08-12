@@ -22,7 +22,7 @@ export default function App() {
       <div>
         <h1>Simple Todo List</h1>
         <div className="wrapper">
-          <input type="text" value={val} onChange={onChangeHandler} />
+          <input type="text" placeholder='e.g, Homework' value={val} onChange={onChangeHandler} />
           <button className="Add__ItemBtn" type="submit" onClick={addItem}>
             +
           </button>
