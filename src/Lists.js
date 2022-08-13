@@ -9,7 +9,7 @@ const Lists = ({ singleList, setList }) => {
 
   const deltItem = (key) => {
     const updatedList = singleList.filter((items) => {
-      return items.key !== key;
+      return items.key !== key; 
     });
     setList(updatedList);
   };
